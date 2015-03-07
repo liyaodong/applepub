@@ -8,20 +8,18 @@ $(function() {
   if(pageW < 768) {
     $body.addClass('mobile');
 
-    $.ajax({
-      url: 'mobile-template.html',
-      dataType: 'html'
-    })
-    .done(function(data) {
+    loadTemplate('mobile-template.html', function(data) {
       $('#mobile-shell').append(data);
       $body.append('<script src="'+ weiboJS +'"></script>');
       mobileJS();
-    })
-    .fail(function() {
-      console.error('Load mobile-template failure .');
     });
   } else {
     $body.addClass('pc');
+
+    loadTemplate('pc-template.html', function(data) {
+      $('#pc-shell').append(data);
+
+    });
   }
 
 
@@ -50,11 +48,27 @@ $(function() {
       var index = $(this).data('index');
 
       mySwiper.slideTo(index);
+    });
 
+
+    // mobile home 'hongdian' btn
+    $root.find('#go-page-hongdian').on('click', function () {
+      mySwiper.slideTo(1);
     });
   }
 
-
+  function loadTemplate (templateURL, callback) {
+    $.ajax({
+      url: templateURL,
+      dataType: 'html'
+    })
+    .done(function(data) {
+      callback(data);
+    })
+    .fail(function() {
+      console.error('Load '+ templateURL +' failure .');
+    });
+  }
 
 
 });
