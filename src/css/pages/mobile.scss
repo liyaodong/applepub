@@ -1,0 +1,66 @@
+ .mobile-nav {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  line-height: 45px;
+  text-align: center;
+  .item {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    float: left;
+    width: 33%;
+    cursor: pointer;
+  }
+ }
+
+ .mobile {
+  .page-home {
+    background: url(../images/bg1.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding-top: 20%;
+    color: #fff;
+    text-align: center;
+    .a-center {
+      height: 250px;
+    }
+    .page-title {
+      font-size: 3.1rem;
+      margin: 0;
+      margin-bottom: 5px;
+      font-weight: normal;
+    }
+    .page-des {
+      margin: 0;
+    }
+    .hongdian-btn {
+      display: inline-block;
+      margin: 50px auto 0 auto;
+      text-decoration: none;
+      background: url(../images/hongdian.png) 0 0 no-repeat;
+      background-size: 100% auto;
+      padding-top: 75px;
+      color: #fff;
+    }
+  }
+
+  .page-article {
+    background: #DFDFDF;
+    .tip {
+      text-align: center;
+      font-size: 2rem;
+      height: 40px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .mobile-shell {
+    display: none;
+  }
+
+}

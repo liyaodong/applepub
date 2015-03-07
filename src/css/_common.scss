@@ -1,0 +1,109 @@
+body {
+  font-size: 16px;
+}
+
+.mobile {
+  .page {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .a-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .page-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .page-des {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  }
+
+.shake {
+  animation: shake 2s ease infinite;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  10% {
+    transform: rotate(10deg)
+  }
+
+  20% {
+    transform: rotate(-10deg)
+  }
+
+  30% {
+    transform: rotate(5deg)
+  }
+
+  40% {
+    transform: rotate(-5deg)
+  }
+
+  60% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+.sharemask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: url(../images/mask.png) center center no-repeat;
+  background-size: 100% 100%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  &.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.sharepic {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.arrowdown {
+  $zoom: 1.5;
+  height:  15px*$zoom;
+  width: 16px*$zoom;
+  background: url(../images/top.png) no-repeat center center;
+  background-size:100%;
+  z-index: 5;
+  bottom: 5%;
+  opacity: 1;
+  animation:flipBottom infinite 1.5s ease-in;
+  animation-direction:alternate;
+  display: none;
+  &.on {
+    display: block;
+  }
+}
+
+@keyframes flipBottom {
+  0%{-webkit-transform: translateY(16x);opacity: 0.5;}
+  50%{-webkit-transform: translateY(8px);opacity: 1;}
+  100%{-webkit-transform: translateY(0px);opacity: 0.5;}
+}
+
