@@ -11,6 +11,7 @@ $(function() {
     loadTemplate('mobile-template.html', function(data) {
       $('#mobile-shell').append(data);
       $body.append('<script src="'+ weiboJS +'"></script>');
+      $('#weibo-live').attr('height', pageH - 45);
       mobileJS();
     });
   } else {
@@ -18,7 +19,7 @@ $(function() {
 
     loadTemplate('pc-template.html', function(data) {
       $('#pc-shell').append(data);
-
+      $body.append('<script src="'+ weiboJS +'"></script>');
     });
   }
 
