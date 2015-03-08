@@ -837,9 +837,6 @@ body {
     font-size: 2rem;
     height: 40px; }
 
-body.wechat .wechat-tip {
-  display: block; }
-
 @media (min-width: 768px) {
   .mobile-shell {
     display: none; } }
@@ -866,7 +863,10 @@ body.wechat .wechat-tip {
   background: url(../images/hongdian.png) 0 0 no-repeat;
   background-size: 100% auto;
   padding-top: 75px;
-  color: #fff; }
+  color: #fff;
+  display: none; }
+.pc-shell .hongdian {
+  margin-top: 50px; }
 .pc-shell .weibo-iframe {
   margin-top: 50px;
   margin-bottom: 50px; }

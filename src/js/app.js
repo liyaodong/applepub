@@ -5,6 +5,14 @@ $(function() {
       pageW = $(document).width(),
       weiboJS = 'http://tjs.sjs.sinajs.cn/open/api/js/wb.js';
 
+  //wechat class
+  var ua = navigator.userAgent.toLowerCase(),
+      isWechat = false;
+  if(/micromessenger/.test(ua)) {
+    $body.addClass('wechat');
+    isWechat = true;
+  }
+
   if(pageW < 768) {
     $body.addClass('mobile');
 
@@ -12,7 +20,15 @@ $(function() {
       $('#mobile-shell').append(data);
       $body.append('<script src="'+ weiboJS +'"></script>');
       $('#weibo-live').attr('height', pageH - 45);
+
       mobileJS();
+
+      if(isWechat) {
+        var isWeiboShow = $('#weibo-live').html().length;
+        if(isWeiboShow === 0) {
+          $('#wechat-tip').show();
+        }
+      }
     });
   } else {
     $body.addClass('pc');
@@ -23,11 +39,6 @@ $(function() {
     });
   }
 
-  //wechat class
-  var ua = navigator.userAgent.toLowerCase();
-  if(/micromessenger/.test(ua)) {
-    $body.addClass('wechat');
-  }
 
 
   function mobileJS () {
