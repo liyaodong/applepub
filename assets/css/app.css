@@ -26,14 +26,29 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
@@ -51,7 +66,8 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-[hidden], template {
+[hidden],
+template {
   display: none; }
 
 /* Links
@@ -65,7 +81,8 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0; }
 
 /* Text-level semantics
@@ -79,7 +96,8 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-b, strong {
+b,
+strong {
   font-weight: bold; }
 
 /**
@@ -112,7 +130,8 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -162,7 +181,10 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
@@ -178,7 +200,11 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   color: inherit;
   /* 1 */
   font: inherit;
@@ -198,7 +224,8 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-button, select {
+button,
+select {
   text-transform: none; }
 
 /**
@@ -208,7 +235,10 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -217,13 +247,15 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled], html input[disabled] {
+button[disabled],
+html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -241,7 +273,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -252,7 +285,8 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
@@ -271,7 +305,8 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -314,7 +349,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-td, th {
+td,
+th {
   padding: 0; }
 
 /**
@@ -412,7 +448,7 @@ td, th {
   background-repeat: no-repeat; }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-  opacity: 0.35;
+  opacity: .35;
   cursor: auto; }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
@@ -456,7 +492,7 @@ td, th {
   display: inline-block;
   border-radius: 100%;
   background: #000;
-  opacity: 0.2; }
+  opacity: .2; }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer; }
@@ -513,24 +549,24 @@ td, th {
   z-index: 10; }
 
 .swiper-container-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent); }
 
 .swiper-container-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent); }
 
 .swiper-container-3d .swiper-slide-shadow-top {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent); }
 
 .swiper-container-coverflow .swiper-wrapper {
   -ms-perspective: 1200px; }
@@ -576,7 +612,7 @@ td, th {
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: 0.6;
+  opacity: .6;
   -webkit-filter: blur(50px);
   filter: blur(50px); }
 
@@ -645,27 +681,21 @@ body {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
-
   10% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg); }
-
   20% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg); }
-
   30% {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg); }
-
   40% {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); }
-
   60% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
@@ -674,31 +704,24 @@ body {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
-
   10% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg); }
-
   20% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg); }
-
   30% {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg); }
-
   40% {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); }
-
   60% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
-
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
-
 .sharemask {
   width: 100%;
   height: 100%;
@@ -745,11 +768,9 @@ body {
   0% {
     -webkit-transform: translateY(16x);
     opacity: 0.5; }
-
   50% {
     -webkit-transform: translateY(8px);
     opacity: 1; }
-
   100% {
     -webkit-transform: translateY(0px);
     opacity: 0.5; } }
@@ -758,15 +779,12 @@ body {
   0% {
     -webkit-transform: translateY(16x);
     opacity: 0.5; }
-
   50% {
     -webkit-transform: translateY(8px);
     opacity: 1; }
-
   100% {
     -webkit-transform: translateY(0px);
     opacity: 0.5; } }
-
 .mobile-nav {
   position: fixed;
   bottom: 0;
@@ -824,9 +842,7 @@ body.wechat .wechat-tip {
 
 @media (min-width: 768px) {
   .mobile-shell {
-    display: none; }
- }
-
+    display: none; } }
 .pc {
   width: 100%;
   background: url(../images/pcbg.jpg) center top no-repeat;
