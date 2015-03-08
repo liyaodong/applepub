@@ -23,6 +23,12 @@ $(function() {
     });
   }
 
+  //wechat class
+  var ua = navigator.userAgent.toLowerCase();
+  if(/micromessenger/.test(ua)) {
+    $body.addClass('wechat');
+  }
+
 
   function mobileJS () {
     var $root = $('#mobile-slider'),

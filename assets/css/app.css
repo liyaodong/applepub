@@ -783,6 +783,11 @@ body {
     width: 33%;
     cursor: pointer; }
 
+.mobile .wechat-tip {
+  height: 70px;
+  font-size: 1.5rem;
+  padding: 0 20px;
+  display: none; }
 .mobile .page-home {
   background: url(../images/bg1.jpg) 0 0 no-repeat;
   background-size: 100% 100%;
@@ -813,6 +818,9 @@ body {
     text-align: center;
     font-size: 2rem;
     height: 40px; }
+
+body.wechat .wechat-tip {
+  display: block; }
 
 @media (min-width: 768px) {
   .mobile-shell {
